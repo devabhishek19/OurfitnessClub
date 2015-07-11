@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Activities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Activity name</th>
+      <th>Date</th>
+      <th>Weight</th>
+      <th>Lunch</th>
+      <th>Dinner</th>
+      <th>First half calories</th>
+      <th>Second half calories</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user.activities.each do |activity| %>
+      <tr>
+        <td><%= activity.activity_name %></td>
+        <td><%= activity.date %></td>
+        <td><%= activity.weight %></td>
+        <td><%= activity.lunch %></td>
+        <td><%= activity.dinner %></td>
+        <td><%= activity.first_half_calories %></td>
+        <td><%= activity.second_half_calories %></td>
+        <td><%= link_to 'Show', activity %></td>
+        <td><%= link_to 'Edit', edit_activity_path(activity) %></td>
+        <td><%= link_to 'Destroy', activity, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Activity', new_activity_path %>

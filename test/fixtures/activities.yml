@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  activity_name: MyString
+  date: 2015-07-08 21:32:15
+  weight: MyString
+  lunch: MyString
+  dinner: MyString
+  first_half_calories: MyString
+  second_half_calories: MyString
+
+two:
+  activity_name: MyString
+  date: 2015-07-08 21:32:15
+  weight: MyString
+  lunch: MyString
+  dinner: MyString
+  first_half_calories: MyString
+  second_half_calories: MyString

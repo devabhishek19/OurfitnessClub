@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+<div class="activity_img">
+  <%= image_tag @activity.image.url(:medium)%>
+</div>
+<p>
+  <strong>Activity name:</strong>
+  <%= @activity.activity_name %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @activity.date %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @activity.weight %>
+</p>
+
+<p>
+  <strong>Lunch:</strong>
+  <%= @activity.lunch %>
+</p>
+
+<p>
+  <strong>Dinner:</strong>
+  <%= @activity.dinner %>
+</p>
+
+<p>
+  <strong>First half calories:</strong>
+  <%= @activity.first_half_calories %>
+</p>
+
+<p>
+  <strong>Second half calories:</strong>
+  <%= @activity.second_half_calories %>
+</p>
+
+<%= link_to 'Edit', edit_activity_path(@activity) %> |
+<%= link_to 'Back', activities_path %>
